@@ -14,7 +14,7 @@ header {
   color: #212121;
 }
 
-.studio-link a {
+.portfolio-link a {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 14px;
@@ -38,21 +38,23 @@ header {
   color: #757575;
 }
 
-section h1 {
+.my-section button {
   font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
   text-align: center;
-  color: #fff;
+  color: #212121;
+  background-color: #f5f4fa;
 }
 
-button {
+.my-section .first-button {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
+  line-height: 162%;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #fff;
   background-color: #2196f3;
@@ -61,60 +63,24 @@ button {
 .my-section h3 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
   color: #212121;
 }
 
 .my-section p {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
+  font-size: 16px;
+  line-height: 187%;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.center-section h2,
-.main-section,
-button {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-}
-
-.center-section h2,
-.main-section {
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-}
-
-.main-section h3 {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-}
-.main-section p,
 .last-section p {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-}
-
-.main-section p {
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #757575;
-}
-
-.last-section p {
-  font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
