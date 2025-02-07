@@ -1,97 +1,95 @@
-.main-link {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+:root {
+  /* шрифти */
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Raleway", serif;
+  /* кольори */
+  --color-primary: #212121;
+  --color-contrast: #ffffff;
+  --color-button: #2196f3;
+  --color-bg-primary: #757575;
+  --color-bg-secondary: #000000;
+  --color-bg-last: #2f303a;
+  --color-bg-one: #f5f4fa;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.header-logo {
+  font-family: var(--font-secondary);
+  color: var(--color-button);
   font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-header {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.portfolio-link a {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-}
-
-.email-link {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-}
-
-.phone-link {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.my-section button {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 162%;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  background-color: #f5f4fa;
-}
-
-.my-section .first-button {
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 162%;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #fff;
-  background-color: #2196f3;
-}
-
-.my-section h3 {
-  font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 200%;
-  letter-spacing: 0.06em;
-  color: #212121;
 }
 
-.my-section p {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.03em;
-  color: #757575;
+.header-span {
+  color: var(--color-bg-secondary);
 }
 
-.last-section p {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+.nav-link {
+  color: var(--color-primary);
   font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover {
+  color: var(--color-button);
 }
 
 .contact-link {
-  font-family: "Playfair Display", serif;
+  color: var(--color-bg-primary);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.contact-link:hover {
+  color: var(--color-button);
+}
+
+.filter-button {
+  color: var(--color-primary);
+  background-color: var(--color-bg-one);
+}
+
+.filter-button:hover {
+  background-color: var(--color-button);
+  color: var(--color-contrast);
+}
+
+.product-name {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.product-about {
+  color: var(--color-bg-primary);
+  font-size: 18px;
+  line-height: 200%;
+}
+
+footer {
+  color: var(--color-contrast);
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logo {
+  font-family: var(--font-secondary);
+  color: var(--color-button);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.footer-span {
+  color: var(--color-contrast);
+}
+
+.footer-link {
+  color: var(--color-contrast);
+  font-weight: 400;
+  font-size: 14px;
 }

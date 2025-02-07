@@ -4,112 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <link rel="stylesheet" href="main.css" />
-      <a href="#" class="main-link"> Web<span>Studio</span></a>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu:wght@500&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@900&family=Ubuntu&display=swap"
-        rel="stylesheet"
-      />
-      <nav>
-        <ul>
-          <li class="studio-link"><a href="#">Студіо</a></li>
-          <li><a href="./src/pages/portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакт</a></li>
+    <header class="header">
+      <a class="header-logo" href="#"
+        >Web<span class="header-span">Studio</span></a
+      >
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Студіо</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./src/pages/portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Контакт</a></li>
         </ul>
       </nav>
-      <nav>
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="email-link"
+      <nav class="contact">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a class="contact-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="phone-link">+38 096 111 11 11</a>
+          <li class="contact-item">
+            <a class="contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <!-- main -->
-    <main>
+    <main class="main">
       <!-- section1 -->
-      <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button>Замовити послугу</button>
+      <section class="about">
+        <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-button">Замовити послугу</button>
       </section>
       <!-- section2 -->
-      <section class="my-section">
-        <ul>
+      <section class="avantages">
+        <ul class="advantages-list">
           <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+            <h3 class="advantages-item">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="advantages-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
           <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
+            <h3 class="advantages-item">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="advantages-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
           <li>
-            <h3>ПЛАНУВАННЯ</h3>
-            <p>
+            <h3 class="advantages-item">ПЛАНУВАННЯ</h3>
+            <p class="advantages-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
+            <h3 class="advantages-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="advantages-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -117,85 +80,112 @@
         </ul>
       </section>
       <!-- section3 -->
-      <section class="center-section">
-        <h2>Чим ми займаємося</h2>
+      <section class="work">
+        <h2 class="work-title">Чим ми займаємося</h2>
 
-        <ul>
-          <li>
+        <ul class="work-list">
+          <li class="work-item">
             <div>
-              <img src="./src/images/work/html.jpg" alt="програмування" />
+              <img
+                class="work-photo"
+                src="./src/images/work/html.jpg"
+                alt="програмування"
+              />
             </div>
           </li>
-          <li>
+          <li class="work-item">
             <div>
-              <img src="./src/images/work/phone.jpg" alt="служба підтримки" />
+              <img
+                class="work-photo"
+                src="./src/images/work/phone.jpg"
+                alt="служба підтримки"
+              />
             </div>
           </li>
-          <li>
+          <li class="work-item">
             <div>
-              <img src="./src/images/work/drawing.jpg" alt="дизайнер" />
+              <img
+                class="work-photo"
+                src="./src/images/work/drawing.jpg"
+                alt="дизайнер"
+              />
             </div>
           </li>
         </ul>
       </section>
       <!-- section4 -->
-      <section class="main-section">
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
-            <article>
-              <div>
-                <img src="./src/images/team/igor.jpg" alt="Ігор Дем'яненко" />
-              </div>
-              <h3>Ігор Дем'яненко</h3>
-              <p>Product Designer</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <div>
-                <img src="./src/images/team/olga.jpg" alt="Ольга Рєпіна" />
-              </div>
-              <h3>Ольга Рєпіна</h3>
-              <p>Frontend Developer</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <div>
-                <img src="./src/images/team/mukola.jpg" alt="Микола Тарасов" />
-              </div>
-              <h3>Микола Тарасов</h3>
-              <p>Marketing</p>
-            </article>
-          </li>
-          <li>
-            <article>
+      <section class="team">
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list">
+          <li class="team-item">
+            <article class="teammate">
               <div>
                 <img
+                  class="teammate-photo"
+                  src="./src/images/team/igor.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </div>
+              <h3 class="teammate-name">Ігор Дем'яненко</h3>
+              <p class="teammate-role">Product Designer</p>
+            </article>
+          </li>
+          <li class="team-item">
+            <article class="teammate">
+              <div>
+                <img
+                  class="teammate-photo"
+                  src="./src/images/team/olga.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </div>
+              <h3 class="teammate-name">Ольга Рєпіна</h3>
+              <p class="teammate-role">Frontend Developer</p>
+            </article>
+          </li>
+          <li class="team-item">
+            <article class="teammate">
+              <div>
+                <img
+                  class="teammate-photo"
+                  src="./src/images/team/mukola.jpg"
+                  alt="Микола Тарасов"
+                />
+              </div>
+              <h3 class="teammate-name">Микола Тарасов</h3>
+              <p class="teammate-role">Marketing</p>
+            </article>
+          </li>
+          <li class="team-item">
+            <article class="teammate">
+              <div>
+                <img
+                  class="teammate-photo"
                   src="./src/images/team/mihaylo.jpg"
                   alt="Михайло Єрмаков"
                 />
               </div>
-              <h3>Михайло Єрмаков</h3>
-              <p>UI Designer</p>
+              <h3 class="teammate-name">Михайло Єрмаков</h3>
+              <p class="teammate-role">UI Designer</p>
             </article>
           </li>
         </ul>
       </section>
     </main>
     <!-- footer -->
-    <footer class="last-section">
-      <a href="#" class="main-link">Web<span>Studio</span></a>
-      <p>м. Київ, пр-т Лесі Українки, 26</p>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-link"
+    <footer class="footer">
+      <a class="footer-logo" href="#"
+        >Web<span class="footer-span">Studio</span></a
+      >
+      <p class="footer-adresse">м. Київ, пр-т Лесі Українки, 26</p>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+        <li class="footer-item">
+          <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </footer>
