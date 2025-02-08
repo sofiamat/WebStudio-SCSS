@@ -1,0 +1,21 @@
+:root {
+  /* Кольори */
+  --logo-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-color: #2f303a;
+  --background-color: #ffffff;
+  --secondary-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --trunslusent-white: (0, 0%, 100%, 0.6);
+  /* Шрифти */
+  --font-primary: "Roboto", serif;
+  --font-secondary: "Raleway", serif;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--primary-text-color);
+}

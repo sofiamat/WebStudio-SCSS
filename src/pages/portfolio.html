@@ -3,203 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфоліо</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../styles.css" />
+    <link rel="stylesheet" href="./../styles/style.css" />
   </head>
   <body>
-    <!-- header -->
     <header class="header">
-      <a class="header-logo" href="#"
-        >Web<span class="header-span">Studio</span></a
-      >
+      <a href="#" class="logo">Web<span class="logo-part">Studio</span></a>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html">Студіо</a>
+            <a class="nav-link" href="/index.html">Студія</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Портфоліо</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакт</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
         </ul>
       </nav>
-      <nav class="contact">
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a class="contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item">
-            <a class="contact-link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <ul class="list">
+        <li class="list-item">
+          <a class="list-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="list-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
-    <!-- main -->
-    <main class="main">
-      <section class="main-filter">
-        <ul class="filter-list">
-          <li class="filtre-item">
-            <button class="filter-button">Усі</button>
+    <main>
+      <section class="portfolio">
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <button class="portfolio-button">Усі</button>
           </li>
-          <li class="filtre-item">
-            <button class="filter-button">Веб-сайти</button>
+          <li class="portfolio-item">
+            <button class="portfolio-button">Веб-сайти</button>
           </li>
-          <li class="filtre-item">
-            <button class="filter-button">Додатки</button>
+          <li class="portfolio-item">
+            <button class="portfolio-button">Додатки</button>
           </li>
-          <li class="filtreitem">
-            <button class="filter-button">Дизайн</button>
+          <li class="portfolio-item">
+            <button class="portfolio-button">Дизайн</button>
           </li>
-          <li class="filtre-item">
-            <button class="filter-button">Маркетинг</button>
+          <li class="portfolio-item">
+            <button class="portfolio-button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="list-product">
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+        <ul class="projects-list">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/tehnokryak.jpg"
-                  alt="Технокряк"
+                  class="project-img"
+                  src="../img/all/tecno.jpg"
+                  width="370"
+                  height="294"
+                  alt="технокряк"
                 />
               </div>
-              <h3 class="product-name">Технокряк</h3>
-              <p class="product-about">Веб-сайт</p>
+              <h3 class="project-title">Технокряк</h3>
+              <p class="projects-text">Веб-сайт</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/poster.jpg"
-                  alt="Постер New Orlean vs Golden Star"
+                  class="project-img"
+                  src="../img/all/poster.jpg"
+                  width="370"
+                  height="294"
+                  alt="Постер"
                 />
               </div>
-              <h3 class="product-name">Постер New Orlean vs Golden Star</h3>
-              <p class="product-about">Дизайн</p>
+              <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+              <p class="projects-text">Дизайн</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/restaurant.jpg"
-                  alt="Ресторан Seafood"
+                  class="project-img"
+                  src="../img/all/seafood.jpg"
+                  width="370"
+                  height="294"
+                  alt="Ресторан"
                 />
               </div>
-              <h3 class="product-name">Ресторан Seafood</h3>
-              <p class="product-about">Додаток</p>
+              <h3 class="project-title">Ресторан Seafood</h3>
+              <p class="projects-text">Додаток</p>
             </article>
           </li>
-
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/proect-prime.jpg"
+                  class="project-img"
+                  src="../img/all/prime.jpg"
+                  width="370"
+                  height="294"
                   alt="Проєкт Prime"
                 />
               </div>
-              <h3 class="product-name">Проєкт Prime</h3>
-              <p class="product-about">Маркетинг</p>
+              <h3 class="project-title">Проєкт Prime</h3>
+              <p class="projects-text">Маркетинг</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/proect-boxes.jpg"
+                  class="project-img"
+                  src="../img/all/boxes.jpg"
+                  width="370"
+                  height="294"
                   alt="Проєкт Boxes"
                 />
               </div>
-              <h3 class="product-name">Проєкт Boxes</h3>
-              <p class="product-about">Додаток</p>
+              <h3 class="project-title">Проєкт Boxes</h3>
+              <p class="projects-text">Додаток</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/inspiration.jpg"
-                  alt="Inspiration has no Borders"
+                  class="project-img"
+                  src="../img/all/inspiration.jpg"
+                  width="370"
+                  height="294"
+                  alt="Inspiration"
                 />
               </div>
-              <h3 class="product-name">Inspiration has no Borders</h3>
-              <p class="product-about">Веб-сайт</p>
+              <h3 class="project-title">Inspiration has no Borders</h3>
+              <p class="projects-text">Веб-сайт</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/limited.jpg"
-                  alt="Видання Limited Edition"
+                  class="project-img"
+                  src="../img/all/edition.jpg"
+                  width="370"
+                  height="294"
+                  alt="Видання"
                 />
               </div>
-              <h3 class="product-name">Видання Limited Edition</h3>
-              <p class="product-about">Дизайн</p>
+              <h3 class="project-title">Видання Limited Edition</h3>
+              <p class="projects-text">Дизайн</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/proect-lab.jpg"
+                  class="project-img"
+                  src="../img/all/label.jpg"
+                  width="370"
+                  height="294"
                   alt="Проєкт LAB"
                 />
               </div>
-              <h3 class="product-name">Проєкт LAB</h3>
-              <p class="product-about">Маркетинг</p>
+              <h3 class="project-title">Проєкт LAB</h3>
+              <p class="projects-text">Маркетинг</p>
             </article>
           </li>
-          <li class="product-item">
-            <article class="product">
-              <div class="product-photo">
+          <li class="projects-item">
+            <article class="project">
+              <div class="project-photo">
                 <img
-                  class="photo-product"
-                  src="./portfolio/bussines.jpg"
-                  alt="Growing Business"
+                  class="project-img"
+                  src="../img/all/business.jpg"
+                  width="370"
+                  height="294"
+                  alt="Business"
                 />
               </div>
-              <h3 class="product-name">Growing Business</h3>
-              <p class="product-about">Додаток</p>
+              <h3 class="project-title">Growing Business</h3>
+              <p class="projects-text">Додаток</p>
             </article>
           </li>
         </ul>
       </section>
     </main>
-    <!-- <footer> -->
     <footer class="footer">
-      <a href="#" class="footer-logo"
-        >Web<span class="footer-span">Studio</span></a
+      <a class="footer-link" href="#"
+        >Web<span class="logo-part">Studio</span></a
       >
-      <p class="-footer-adresse">м. Київ, пр-т Лесі Українки, 26</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <address class="address">
+        <ul class="address-list">
+          <li class="address-item">
+            <p class="address-text">м.Київ, пр-т Лесі Українки, 26</p>
+          </li>
+          <li class="address-item">
+            <a class="adress-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="address-item">
+            <a class="adress-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
     </footer>
   </body>
 </html>
