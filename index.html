@@ -10,11 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/reset.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Web<span class="logo-part">Studio</span></a>
+      <a href="#" class="logo"
+        >Web<span class="header-logo-part">Studio</span></a
+      >
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
@@ -40,34 +50,34 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="slogan-button">Замовити послугу</button>
+        <button class="hero-button">Замовити послугу</button>
       </section>
-      <section class="about">
-        <h2 hidden class="about-title">Про нас</h2>
-        <ul class="about-list">
-          <li class="about-item">
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p>
+      <section class="advantages">
+        <h2 class="advantages-title-about">Про нас</h2>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="advantages-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li class="about-item">
-            <h3 class="about-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="about-text">
+          <li class="advantages-item">
+            <h3 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="advantages-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li class="about-item">
-            <h3 class="about-subtitle">ПЛАНУВАННЯ</h3>
-            <p class="about-text">
+          <li class="advantages-item">
+            <h3 class="advantages-title">ПЛАНУВАННЯ</h3>
+            <p class="advantages-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="about-item">
-            <h3 class="about-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="about-text">
+          <li class="advantages-item">
+            <h3 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="advantages-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -120,8 +130,8 @@
                   alt="Дизайнер"
                 />
               </div>
-              <h3 class="teammate-title">Ігор Дем'яненко</h3>
-              <p class="teammate-text">Product Designer</p>
+              <h3 class="teammate-name">Ігор Дем'яненко</h3>
+              <p class="teammate-role">Product Designer</p>
             </article>
           </li>
           <li class="team-item">
@@ -135,8 +145,8 @@
                   alt="Розробник"
                 />
               </div>
-              <h3 class="teammate-title">Ольга Рєпіна</h3>
-              <p class="teammate-text">Frontend Developer</p>
+              <h3 class="teammate-name">Ольга Рєпіна</h3>
+              <p class="teammate-role">Frontend Developer</p>
             </article>
           </li>
           <li class="team-item">
@@ -150,8 +160,8 @@
                   alt="Маркетинг"
                 />
               </div>
-              <h3 class="teammate-title">Микола Тарасов</h3>
-              <p class="teammate-text">Marketing</p>
+              <h3 class="teammate-name">Микола Тарасов</h3>
+              <p class="teammate-role">Marketing</p>
             </article>
           </li>
           <li class="team-item">
@@ -165,8 +175,8 @@
                   alt="Дизайнер"
                 />
               </div>
-              <h3 class="teammate-title">Михайло Єрмаков</h3>
-              <p class="teammate-text">UI Designer</p>
+              <h3 class="teammate-name">Михайло Єрмаков</h3>
+              <p class="teammate-role">UI Designer</p>
             </article>
           </li>
         </ul>
