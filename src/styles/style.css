@@ -21,17 +21,28 @@ body {
   color: var(--primary-text-color);
 }
 
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
+  align-items: center;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 25px 0px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 93px;
 }
 
 .header-link {
@@ -41,22 +52,26 @@ body {
 .header-link:hover {
   color: var(--accent-color);
 }
+.header-logo-part {
+  color: var(--logo-color);
+}
 
 .logo {
   font-family: "Raleway", serif;
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
+
+  line-height: 1.2;
   color: var(--accent-color);
 }
-.header-logo-part {
-  color: var(--logo-color);
+
+.nav {
+  flex-grow: 2;
 }
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.nav-list {
+  display: flex;
+  gap: 50px;
 }
 
 .nav-link {
@@ -68,6 +83,12 @@ body {
 .nav-link:hover {
   color: var(--accent-color);
 }
+
+.list {
+  display: flex;
+  gap: 50px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -77,18 +98,65 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  margin-bottom: 210px;
+  color: var(--background-color);
   text-align: center;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0px;
 }
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantages-item::before {
+  content: "";
+  display: block;
+  background-clip: content-box;
+
+  height: 120px;
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.photo-antenna::before {
+  background-image: url(../images/main/antenna.png);
+}
+
+.photo-heur::before {
+  background-image: url(../images/main/heur.png);
+}
+
+.photo-graphic::before {
+  background-image: url(../images/main/graphic.png);
+}
+
+.photo-astonaft::before {
+  background-image: url(../images/main/astronaft.png);
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -102,6 +170,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
+.work {
+  padding: 95px 0px;
+}
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -109,14 +182,31 @@ body {
   text-align: center;
   padding-bottom: 50px;
 }
-.work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+.work-list {
+  display: flex;
+  gap: 30px;
 }
+
+.work-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .team {
   padding-top: 94px;
   padding-bottom: 87px;
 }
+
+.team-list {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.team-item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .teammmate-name {
   font-weight: 500;
   font-size: 16px;
@@ -167,14 +257,25 @@ body {
   text-align: center;
 }
 
+.projects-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.03em;
   background-color: var(--primary-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .footer-text {
@@ -204,10 +305,19 @@ body {
   text-decoration: none;
 }
 
+.footer-address-text {
+  color: var(--background-color);
+}
+
 .footer-address-link {
   color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-address-list {
   text-decoration: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
