@@ -219,12 +219,30 @@ body {
   color: var(--secondary-text-color);
 }
 
-.portfolio-item {
-  color: var(--colorTextWords);
+.portfolio {
+  padding: 95px 0px;
 }
 
-.portfolio-item:hover {
-  color: var(--colroTextLink);
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 8px;
+  margin-top: 50px;
+}
+
+.portfolio-button {
+  color: var(--logo-color);
+}
+
+.portfolio-button:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
 }
 
 .hero {
@@ -257,7 +275,13 @@ body {
   text-align: center;
 }
 
-.projects-item {
+.gallery-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 60px) / 3);
@@ -299,6 +323,12 @@ body {
   line-height: 1.19;
   color: var(--background-color);
 }
+.footer-address-list {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
 
 .footer-address {
   color: var(--background-color);
@@ -312,12 +342,5 @@ body {
 .footer-address-link {
   color: var(--background-color);
   display: flex;
-  flex-direction: column;
-}
-
-.footer-address-list {
-  text-decoration: none;
-  display: flex;
-  gap: 10px;
   flex-direction: column;
 }
