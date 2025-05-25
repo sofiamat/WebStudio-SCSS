@@ -8,6 +8,7 @@
   --secondary-color: #f5f4fa;
   --accent-color: #2196f3;
   --translucent-white: rgba(255, 255, 255, 0.6);
+  --text-arrow: #ececec;
   /* Шрифти */
   --font-primary: "Roboto", serif;
   --font-secondary: "Raleway", serif;
@@ -43,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   gap: 93px;
+  padding-bottom: 32px;
 }
 
 .header-link {
@@ -72,6 +74,13 @@ body {
 .nav-list {
   display: flex;
   gap: 50px;
+}
+
+.nav-list-portfolio::after {
+  content: "";
+  width: 1600;
+  height: 1px;
+  color: var(--text-arrow);
 }
 
 .nav-link {
@@ -259,7 +268,8 @@ body {
 .portfolio-list {
   display: flex;
   gap: 8px;
-  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 94px;
 }
 
 .portfolio-button {
