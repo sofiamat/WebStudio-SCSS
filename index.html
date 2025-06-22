@@ -67,7 +67,104 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button btn-open" data-modal-open>
+            Замовити послугу
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="btn-close" data-modal-close>
+                <svg class="social-icons-forms">
+                  <use
+                    href="./src/images/social-networks/symbol-forms.svg#icon-close"
+                  />
+                </svg>
+              </button>
+
+              <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
+              <form class="form">
+                <div class="form-field">
+                  <label for="username">Ім'я</label>
+                  <div class="form-input">
+                    <svg class="social-icons-forms">
+                      <use
+                        href="./src/images/social-networks/symbol-forms.svg#icon-person"
+                      />
+                    </svg>
+
+                    <input
+                      class="modal-input"
+                      id="username"
+                      required
+                      name="user_name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="phonenumber">Телефон</label>
+                  <div class="form-input">
+                    <svg class="social-icons-forms">
+                      <use
+                        href="./src/images/social-networks/symbol-forms.svg#icon-phone"
+                      />
+                    </svg>
+
+                    <input
+                      class="modal-input"
+                      id="phonenumber"
+                      required
+                      name="phone_number"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="useremail">Пошта</label>
+                  <div class="form-input">
+                    <svg class="social-icons-forms">
+                      <use
+                        href="./src/images/social-networks/symbol-forms.svg#icon-email"
+                      />
+                    </svg>
+
+                    <input
+                      class="modal-input"
+                      id="useremail"
+                      required
+                      name="user_email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="userchat">Коментар</label>
+                  <div class="form-textarea">
+                    <textarea
+                      class="form-input"
+                      rows="4"
+                      cols="50"
+                      placeholder="Введіть текст"
+                      required
+                      name="user_chat"
+                      id="userchat"
+                    >
+                    </textarea>
+                  </div>
+                </div>
+                <div class="form-checkbox">
+                  <input type="checkbox" />
+                  <h4>
+                    Погоджуюся з розсилкою та приймаю
+                    <a class="checkbox-link" href="#">Умови договору</a>
+                  </h4>
+                </div>
+                <button class="form-button">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -540,7 +637,28 @@
             </li>
           </ul>
         </div>
+        <div class="footer-email">
+          <h3 class="footer-email-title">Підпишіться на розсилку</h3>
+          <form
+            class="send-form"
+            name="user_email"
+            autocomplete="on"
+            novalidate
+          >
+            <input class="input" type="email" placeholder="E-mail" />
+            <button class="footer-email-button" type="button">
+              Підписатися
+              <!-- <img
+                width="24px"
+                class="footer-email-img"
+                src="./src/images/footer/twitter.png"
+                alt="twitter"
+              /> -->
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>

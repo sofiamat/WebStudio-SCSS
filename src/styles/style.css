@@ -133,6 +133,7 @@ body {
     url(../images/work/discation.png);
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
 }
 
 .hero-container {
@@ -150,7 +151,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   line-height: 1.3;
-  max-height: 612px;
+  max-height: 120px;
+  max-width: 696px;
 }
 
 .hero-button {
@@ -164,6 +166,124 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
 }
+
+.hero-button:hover {
+  color: var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.4);
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  /* ------------- */
+  /* inset: 0; */
+  /* ------------- */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  background-color: #f2f2f2;
+  position: absolute;
+
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* transform: translate(-50%, 50%); */
+  padding: 20px;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 41px;
+  padding-top: 32px;
+  letter-spacing: 0.03em;
+  line-height: auto;
+  color: var(--primary-text-color);
+}
+
+.username,
+.phonenumber,
+.useremail {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.form {
+  margin-left: 39px;
+}
+
+.form-input {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.form-input:focus-within {
+  border-radius: 4px;
+  border-color: var(--accent-color);
+}
+
+.modal-input {
+  width: 100%;
+}
+
+.form-checkbox {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  text-decoration: solid;
+}
+
+.social-icons-forms {
+  width: 30px;
+  height: 30px;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  color: var(--background-color);
+  padding: 10px 52px;
+  background-color: #188ce8;
+  border-radius: 4px;
+  margin-left: 165px;
+  margin-right: 163px;
+}
+
 .advantages {
   padding: 94px 0px 0px;
 }
@@ -336,6 +456,11 @@ body {
   padding-bottom: 50px;
 }
 
+.clients-item {
+  border-radius: 1px;
+  border-color: #afb1b8;
+}
+
 .clients-list {
   display: flex;
   align-items: center;
@@ -443,6 +568,7 @@ body {
   background-color: var(--secondary-color);
 }
 .team-title {
+  display: flex;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -450,6 +576,7 @@ body {
 }
 
 .footer {
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
@@ -552,6 +679,67 @@ body {
   width: 20px;
   height: 20px;
 }
+
+.footer-email {
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+.footer-email-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--background-color);
+  margin-bottom: 20px;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.footer-email-button {
+  gap: 10px;
+  padding: 10px 28px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 700;
+  /* background-image: url(../images/footer/twitter.png); */
+  /* background-repeat: no-repeat; */
+  margin-left: 12px;
+  /* background-size: 24px;
+  background-position: center; */
+  text-align: center;
+}
+
+.footer-email-button:hover {
+  color: var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  width: 47px;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 15px 295px 15px 16px;
+  color: rgb(255, 255, 255, 0.6);
+  width: 358px;
+  border-color: rgb(255, 255, 255, 0.3);
+}
+
+.input:hover {
+  border-color: rgb(33, 150, 243, 0.3);
+}
+
+/* .footer-email-img {
+  width: 24px;
+  text-align: center;
+} */
+
 /* 
 .teammate-list {
   display: flex;
