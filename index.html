@@ -70,100 +70,97 @@
           <button class="hero-button btn-open" data-modal-open>
             Замовити послугу
           </button>
-
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="btn-close" data-modal-close>
-                <svg class="social-icons-forms">
-                  <use
-                    href="./src/images/social-networks/symbol-forms.svg#icon-close"
-                  />
-                </svg>
-              </button>
-
-              <h2 class="modal-title">
-                Залиште свої дані, ми вам передзвонимо
-              </h2>
-              <form class="form">
-                <div class="form-field">
-                  <label for="username">Ім'я</label>
-                  <div class="form-input">
-                    <svg class="social-icons-forms">
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="btn-close" data-modal-close>
+              <svg class="form-close">
+                <use
+                  href="./src/images/social-networks/symbol-forms.svg#icon-close"
+                />
+              </svg>
+            </button>
+            <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="form-modal">
+              <div class="form-fields">
+                <div class="form-element">
+                  <label class="form-label" for="username">Ім'я</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
                       <use
                         href="./src/images/social-networks/symbol-forms.svg#icon-person"
                       />
                     </svg>
-
                     <input
-                      class="modal-input"
+                      class="form-input"
                       id="username"
+                      name="username"
                       required
-                      name="user_name"
                       type="text"
                     />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="phonenumber">Телефон</label>
-                  <div class="form-input">
-                    <svg class="social-icons-forms">
+                <div class="form-element">
+                  <label class="form-label" for="phone">Телефон</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
                       <use
                         href="./src/images/social-networks/symbol-forms.svg#icon-phone"
                       />
                     </svg>
-
                     <input
-                      class="modal-input"
-                      id="phonenumber"
+                      class="form-input"
+                      id="phone"
+                      name="phone"
                       required
-                      name="phone_number"
-                      type="text"
+                      type="tel"
                     />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="useremail">Пошта</label>
-                  <div class="form-input">
-                    <svg class="social-icons-forms">
+                <div class="form-element">
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="form-field">
+                    <svg class="form-icon">
                       <use
                         href="./src/images/social-networks/symbol-forms.svg#icon-email"
                       />
                     </svg>
-
                     <input
-                      class="modal-input"
-                      id="useremail"
+                      class="form-input"
+                      id="email"
+                      name="email"
                       required
-                      name="user_email"
-                      type="text"
+                      type="email"
                     />
                   </div>
                 </div>
-                <div class="form-field">
-                  <label for="userchat">Коментар</label>
-                  <div class="form-textarea">
+                <div class="form-element">
+                  <label class="form-label" for="comment">Коментар</label>
+                  <div class="form-field">
                     <textarea
-                      class="form-input"
-                      rows="4"
-                      cols="50"
+                      class="form-comment"
+                      name="comment"
+                      id="comment"
                       placeholder="Введіть текст"
-                      required
-                      name="user_chat"
-                      id="userchat"
                     >
                     </textarea>
                   </div>
                 </div>
-                <div class="form-checkbox">
-                  <input type="checkbox" />
-                  <h4>
-                    Погоджуюся з розсилкою та приймаю
-                    <a class="checkbox-link" href="#">Умови договору</a>
-                  </h4>
-                </div>
-                <button class="form-button">Відправити</button>
-              </form>
-            </div>
+              </div>
+              <div class="Conditions">
+                <input class="Condition-checkbox" required type="checkbox" />
+                <p class="condition-text">
+                  Погоджуюся з розсилкою та приймаю
+
+                  <a class="condition-link" href="#">Умови договору</a>
+                </p>
+              </div>
+              <div class="modal-button">
+                <button class="condition-button" type="submit">
+                  Відправити
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
