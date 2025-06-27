@@ -44,7 +44,6 @@ body {
   display: flex;
   align-items: center;
   gap: 93px;
-  padding-bottom: 32px;
 }
 
 .header-link {
