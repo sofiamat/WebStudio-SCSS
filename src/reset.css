@@ -16,7 +16,9 @@ a {
   color: inherit;
 }
 
-button {
+button,
+input,
+textarea {
   border: 0;
   outline: 0;
   color: inherit;

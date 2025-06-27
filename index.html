@@ -136,7 +136,7 @@
                 </div>
                 <div class="form-element">
                   <label class="form-label" for="comment">Коментар</label>
-                  <div class="form-field">
+                  <div class="form-field comment-field">
                     <textarea
                       class="form-comment"
                       name="comment"
@@ -147,8 +147,8 @@
                   </div>
                 </div>
               </div>
-              <div class="Conditions">
-                <input class="Condition-checkbox" required type="checkbox" />
+              <div class="conditions">
+                <input class="condition-checkbox" required type="checkbox" />
                 <p class="condition-text">
                   Погоджуюся з розсилкою та приймаю
 
@@ -575,7 +575,7 @@
                 </p>
               </li>
               <li class="footer-address-item">
-                <a href="mailto:info@devstudio.com" class="footer-adress-link"
+                <a href="mailto:info@devstudio.com" class="adress-link"
                   >info@devstudio.com</a
                 >
               </li>
@@ -642,16 +642,24 @@
             autocomplete="on"
             novalidate
           >
-            <input class="input" type="email" placeholder="E-mail" />
-            <button class="footer-email-button" type="button">
-              Підписатися
-              <!-- <img
-                width="24px"
-                class="footer-email-img"
-                src="./src/images/footer/twitter.png"
-                alt="twitter"
-              /> -->
-            </button>
+            <div class="footer-meta">
+              <div class="footer-follow">
+                <input
+                  class="input"
+                  type="email"
+                  required
+                  placeholder="E-mail"
+                />
+                <button class="footer-email-button" type="submit">
+                  Підписатися
+                  <!-- <svg>
+                    <use
+                      href="./src/images/social-networks/symbol-twitter.svg"
+                    />
+                  </svg> -->
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
