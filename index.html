@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./src/reset.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -66,7 +67,9 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-title" data-aos="fade-up" data-aos-duration="3000">
+            Ефективні рішення для вашого бізнесу
+          </h1>
           <button class="hero-button btn-open" data-modal-open>
             Замовити послугу
           </button>
@@ -202,7 +205,7 @@
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-right">
               <img
                 class="work-img"
                 src="./src/images/work/html-1.webp"
@@ -212,7 +215,7 @@
               />
               <h3 class="img-title">Десктопні додатки</h3>
             </li>
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-down">
               <img
                 class="work-img"
                 src="./src/images/work/phone-2.webp"
@@ -222,7 +225,7 @@
               />
               <h3 class="img-title">Мобільні додатки</h3>
             </li>
-            <li class="work-item">
+            <li class="work-item" data-aos="fade-left">
               <img
                 class="work-img"
                 src="./src/images/work/art-3.webp"
@@ -240,7 +243,7 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <article class="teammate">
+              <article class="teammate" data-aos="zoom-in">
                 <div class="teammate-photo">
                   <img
                     class="teammate-img"
@@ -305,7 +308,7 @@
               </article>
             </li>
             <li class="team-item">
-              <article class="teammate">
+              <article class="teammate" data-aos="zoom-in">
                 <div class="teammate-photo">
                   <img
                     class="teammate-img"
@@ -369,7 +372,7 @@
               </article>
             </li>
             <li class="team-item">
-              <article class="teammate">
+              <article class="teammate" data-aos="zoom-in">
                 <div class="teammate-photo">
                   <img
                     class="teammate-img"
@@ -433,7 +436,7 @@
               </article>
             </li>
             <li class="team-item">
-              <article class="teammate">
+              <article class="teammate" data-aos="zoom-in">
                 <div class="teammate-photo">
                   <img
                     class="teammate-img"
@@ -665,5 +668,9 @@
       </div>
     </footer>
     <script type="module" src="./src/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
