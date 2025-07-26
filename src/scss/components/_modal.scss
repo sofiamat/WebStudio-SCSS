@@ -1,0 +1,115 @@
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $background-color;
+  text-align: center;
+  background-color: $accent-color;
+  border-radius: 4px;
+  padding: 10px 32px;
+  box-shadow: 2px 4px 4px 0px rgb(0, 0, 0, 0.13);
+  transition-property: color, background-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover {
+  color: $accent-color;
+  background-color: $background-color;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.2);
+  transition-property: opacity;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  inset: 0;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  background-color: $background-color;
+  position: absolute;
+
+  min-width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  padding: 40px;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 3px 5px 5px 0px rgb(0, 0, 0, 0.13);
+  transition-property: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translateX(-50%) translateY(-150%) scale(0.7);
+}
+
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 6px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.modal-button {
+  display: flex;
+  justify-content: center;
+}
+.form-close {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover .form-close,
+.btn-close:hover {
+  cursor: pointer;
+  fill: $accent-color;
+}
+
+.modal-title {
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 20px;
+
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+.condition-button {
+  font-weight: 700;
+  font-size: 16;
+  color: $background-color;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  padding: 10px 52px;
+  border-radius: 4px;
+  background-color: $accent-color;
+  transition-property: box-shadow;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.condition-button:hover {
+  box-shadow: 0 5px 5px 0px rgb(0, 0, 0, 0.13);
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,70 @@
+.form-icon {
+  width: 18px;
+  height: 18px;
+  color: $primary-text-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover .form-icon,
+.form-field:hover,
+.form-field:focus-within .form-icon,
+.form-field:focus-within {
+  cursor: pointer;
+  border-color: $accent-color;
+  fill: var(--accent-color);
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.form-element {
+  display: flex;
+  row-gap: 4px;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(33, 33, 33, 0.2);
+  padding: 11px 12px;
+  border-radius: 4px;
+  gap: 12px;
+  color: var(--background-color);
+  background-color: $background-color;
+  transition-property: border;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:hover {
+  border: 1px solid $accent-color;
+}
+
+.comment-field {
+  resize: none;
+}
+
+.form-input {
+  flex-grow: 2;
+  font-size: 12px;
+  color: $logo-color;
+  resize: none;
+}
+
+.comment-field {
+  padding: 12px 16px;
+}
+
+.form-comment {
+  min-height: 96px;
+  resize: none;
+}

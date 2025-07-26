@@ -150,7 +150,7 @@ body {
   width: 10px;
   height: 16px;
 }
-
+/*.................................. HERO................................ */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -394,7 +394,7 @@ body {
 .condition-button:hover {
   box-shadow: 0 5px 5px 0px rgb(0, 0, 0, 0.13);
 }
-
+/*..................................ADVANTAGES................................ */
 .advantages {
   padding: 94px 0px 0px;
 }
@@ -450,7 +450,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
+/*..................................WORK................................ */
 .work {
   padding: 95px 0px;
 }
@@ -492,7 +492,7 @@ body {
   bottom: 0;
   left: 0;
 }
-
+/*..................................TEAM................................ */
 .team {
   padding-top: 94px;
   padding-bottom: 87px;
@@ -574,7 +574,7 @@ body {
   width: 20px;
   height: 20px;
 }
-
+/*..................................CLIENTS................................ */
 .clients {
   padding: 94px 0px;
 }
@@ -623,142 +623,7 @@ body {
   fill: var(--accent-color);
 }
 
-.portfolio {
-  margin-bottom: 94px;
-}
-
-.portfolio-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.portfolio-list {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 50px;
-  margin-top: 94px;
-}
-
-.portfolio-button {
-  color: var(--logo-color);
-  padding: 6px 22px;
-  font-size: 16px;
-  letter-spacing: inherit;
-  border-radius: 4px;
-  transition-property: background-color color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-button:hover {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  cursor: pointer;
-}
-
-.gallery-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.gallery-item {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.project {
-  outline: 1px solid var(--secondary-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project:hover {
-  box-shadow: 2px 5px 5px 0px rgb(0, 0, 0, 0.13);
-  cursor: pointer;
-}
-
-.project:hover .project-overlay {
-  transform: translateY(0);
-}
-
-.project-title {
-  font-weight: 700;
-  font-size: 18px;
-
-  line-height: 2;
-}
-
-.project-photo {
-  position: relative;
-  overflow: hidden;
-}
-
-.project:hover .project-overlay {
-  transform: translateY(0%);
-}
-
-.project-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-overlay-content {
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--background-color);
-}
-
-.project-div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 20px 24px;
-}
-
-.projects-text {
-  font-size: 16px;
-  color: var(--secondary-text-color);
-  line-height: 1.8;
-}
-
-.hero-title {
-  color: var(--background-color);
-}
-
-.hero-button:hover {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-}
-
-.hero-button {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  transition-property: background-color color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.team {
-  background-color: var(--secondary-color);
-}
-.team-title {
-  display: flex;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
+/*..................................FOOTER................................ */
 .footer {
   display: flex;
   font-weight: 400;
@@ -926,35 +791,111 @@ body {
 input:focus-within {
   border: 1px solid rgb(33, 150, 243, 0.3);
 }
+/*..................................PORTFOLIO................................ */
+.portfolio {
+  margin-bottom: 94px;
+}
 
-/* .footer-email-img {
-  width: 24px;
-  text-align: center;
-} */
-
-/* 
-.teammate-list {
+.portfolio-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
 }
-.teammate-link {
+
+.portfolio-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.portfolio-button {
+  color: var(--logo-color);
+  padding: 6px 22px;
+  font-size: 16px;
+  letter-spacing: inherit;
+  border-radius: 4px;
+  transition-property: background-color color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-button:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+/*..................................GALLERY................................ */
+.gallery-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) / 3);
+}
+/*..................................PROJECT................................ */
+.project {
+  outline: 1px solid var(--secondary-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project:hover {
+  box-shadow: 2px 5px 5px 0px rgb(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+.project:hover .project-overlay {
+  transform: translateY(0);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+
+  line-height: 2;
+}
+
+.project-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover .project-overlay {
+  transform: translateY(0%);
+}
+
+.project-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-overlay-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--background-color);
+}
+
+.project-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 30px;
-  fill: #afb1b8;
-  padding: 12px;
+  gap: 5px;
+  padding: 20px 24px;
 }
 
-.teammate-link:hover {
-  fill: var(--background-color);
-  background-color: var(--accent-color);
+.projects-text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  line-height: 1.8;
 }
-
-.teammate-icon {
-  width: 20px;
-  height: 20px;
-} */
