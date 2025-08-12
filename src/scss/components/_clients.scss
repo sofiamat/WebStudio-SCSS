@@ -24,7 +24,7 @@
 }
 
 .clients__link:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid $accent-color;
 }
 
 .clients__icon {
@@ -35,5 +35,5 @@
 }
 
 .clients__link:hover:hover .clients__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }

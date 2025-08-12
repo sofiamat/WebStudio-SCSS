@@ -639,7 +639,7 @@ body {
 }
 
 .clients__link:hover {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid #2196f3;
 }
 
 .clients__icon {
@@ -650,7 +650,7 @@ body {
 }
 
 .clients__link:hover:hover .clients__icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .footer {
