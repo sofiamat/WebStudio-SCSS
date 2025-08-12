@@ -1,0 +1,45 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid__list--gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grid__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.grid__item--col-3 {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.grid__item--col-6 {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.grid__item--col-3 {
+  display: flex;
+  position: relative;
+  align-items: end;
+}
+
+.grid__item--content::before {
+  content: "";
+  display: block;
+  background-clip: content-box;
+
+  height: 120px;
+  background-color: var(--secondary-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}

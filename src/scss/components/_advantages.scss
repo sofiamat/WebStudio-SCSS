@@ -1,55 +1,34 @@
-.advantages {
+.section--advatages {
   padding: 94px 0px 0px;
 }
 
-.advantages-list {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.photo__antenna::before {
+  background-image: url(../../images/main/antenna.png);
 }
 
-.advantages-item {
-  flex-basis: calc((100% - 90px) / 4);
+.photo__heur::before {
+  background-image: url(../../images/main/heur.png);
 }
 
-.advantages-item::before {
-  content: "";
-  display: block;
-  background-clip: content-box;
-
-  height: 120px;
-  background-color: $secondary-color;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
+.photo__graphic::before {
+  background-image: url(../../images/main/graphic.png);
 }
 
-.photo-antenna::before {
-  background-image: url(../images/main/antenna.png);
+.photo__astonaft::before {
+  background-image: url(../../images/main/astronaft.png);
 }
 
-.photo-heur::before {
-  background-image: url(../images/main/heur.png);
-}
-
-.photo-graphic::before {
-  background-image: url(../images/main/graphic.png);
-}
-
-.photo-astonaft::before {
-  background-image: url(../images/main/astronaft.png);
-}
-
-.advantages-title {
+.advantages__title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantages-text {
+
+.advantages__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.03em;
-  color: $secondary-text-color;
+  color: var(--secondary-text-color);
 }
