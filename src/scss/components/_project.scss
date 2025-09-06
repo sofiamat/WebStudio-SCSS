@@ -1,62 +1,65 @@
-.project {
-  outline: 1px solid $secondary-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
+  .project {
+    outline: 1px solid $secondary-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.project:hover {
-  box-shadow: 2px 5px 5px 0px rgb(0, 0, 0, 0.13);
-  cursor: pointer;
-}
+  .project:hover {
+    box-shadow: 2px 5px 5px 0px rgb(0, 0, 0, 0.13);
+    cursor: pointer;
+  }
 
-.project:hover .project-overlay {
-  transform: translateY(0);
-}
+  .project:hover .project-overlay {
+    transform: translateY(0);
+  }
 
-.project-title {
-  font-weight: 700;
-  font-size: 18px;
+  .project-title {
+    font-weight: 700;
+    font-size: 18px;
 
-  line-height: 2;
-}
+    line-height: 2;
+  }
 
-.project-photo {
-  position: relative;
-  overflow: hidden;
-}
+  .project-photo {
+    position: relative;
+    overflow: hidden;
+  }
 
-.project:hover .project-overlay {
-  transform: translateY(0%);
-}
+  .project:hover .project-overlay {
+    transform: translateY(0%);
+  }
 
-.project-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  .project-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.project-overlay-content {
-  font-size: 18px;
-  line-height: 1.6;
-  color: $background-color;
-}
+  .project-overlay-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: $background-color;
+  }
 
-.project-div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 20px 24px;
-}
+  .project-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 24px;
+  }
 
-.projects-text {
-  font-size: 16px;
-  color: $secondary-text-color;
-  line-height: 1.8;
+  .projects-text {
+    font-size: 16px;
+    color: $secondary-text-color;
+    line-height: 1.8;
+  }
 }

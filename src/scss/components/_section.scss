@@ -1,25 +1,60 @@
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section--advatages {
-  padding: 94px 0px 0px;
+  padding: 60px 0px 0px;
 }
 
 .section--work {
-  padding: 95px 0px;
+  display: none;
 }
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 50px;
 }
 
 .section--team {
-  padding-top: 94px;
-  padding-bottom: 87px;
-  background-color: var(--secondary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-color;
+}
+
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 94px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section--advatages {
+    padding: 94px 0px 0px;
+  }
+
+  .section--work {
+    padding: 95px 0px;
+  }
+
+  .section__title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .section--team {
+    padding-top: 94px;
+    padding-bottom: 87px;
+    background-color: $secondary-color;
+  }
 }

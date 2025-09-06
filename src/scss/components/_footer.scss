@@ -8,29 +8,33 @@
   padding: 60px 0px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  flex-direction: row;
-  gap: 70px;
+
+  gap: 60px;
 }
 
-.footer-text {
+.footer__text {
   color: $background-color;
 }
 
-.footer-logo {
+.footer__logo {
   font-family: "Raleway", serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.19;
   color: $accent-color;
   text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-logo-part {
+.logo__part--color {
   font-family: "Raleway", serif;
   font-size: 26px;
   font-weight: 700;
@@ -38,35 +42,41 @@
   line-height: 1.19;
   color: $background-color;
 }
-.footer-address-list {
+
+.address__list {
   text-decoration: none;
   display: flex;
-  gap: 10px;
+  gap: 8px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-address {
+.footer__address {
   color: $background-color;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-address-text {
+.address__text {
   color: $background-color;
   margin-top: 20px;
 }
 
-.adress-link {
+.adress__link {
   color: rgb(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
 }
 
-.footer-div {
-  margin-top: 72px;
+.icons__div {
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
-.footer-texte {
+.icons__text {
   font-weight: 700;
   font-size: 14px;
   color: $background-color;
@@ -74,9 +84,12 @@
   font-family: $font-primary;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.footer-list {
+.icons__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,10 +97,11 @@
   gap: 10px;
 }
 
-.footer-link {
+.icons__link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 30px;
   fill: $background-color;
   background-color: rgba(255, 255, 255, 0.1);
@@ -96,21 +110,21 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
+.icons__link:hover {
   background-color: $accent-color;
 }
 
-.footer-icon {
+.icons__grid {
   width: 20px;
   height: 20px;
 }
 
-.footer-email {
-  margin-top: 72px;
+.footer__email {
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
-.footer-email-title {
+.email__title {
   font-weight: 700;
   font-size: 14px;
   color: $background-color;
@@ -118,11 +132,20 @@
   font-family: $font-primary;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-email-button {
+.footer__meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email__button {
   gap: 10px;
-  padding: 10px 28px;
+  padding: 10px 31px;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -138,10 +161,14 @@
   text-align: center;
   transition-property: color background-color box-shadow;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-email-button:hover {
-  color: var(--accent-color);
+.email__button:hover {
+  color: $accent-color;
   background-color: $background-color;
   box-shadow: 3px 5px 5px 0px rgb(0, 0, 0, 0.8);
 }
@@ -153,15 +180,186 @@
   background-color: transparent;
   font-size: 16px;
   border-radius: 4px;
-  padding: 15px 295px 15px 16px;
+  padding: 15px 387px 15px 16px;
   color: rgb(255, 255, 255, 0.6);
   width: 358px;
   border: 1px solid rgb(255, 255, 255, 0.3);
   transition-property: border;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
 }
-
 .input:hover,
 input:focus-within {
   border: 1px solid rgb(33, 150, 243, 0.3);
+}
+
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    letter-spacing: 0.03em;
+    background-color: $primary-color;
+    padding: 60px 0px;
+  }
+
+  .footer__container {
+    display: flex;
+
+    flex-direction: column;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .footer__text {
+    color: $background-color;
+  }
+
+  .footer__logo {
+    font-family: "Raleway", serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    color: $accent-color;
+    text-align: start;
+  }
+
+  .logo__part--color {
+    font-family: "Raleway", serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    color: $background-color;
+  }
+  .address__list {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .footer__address {
+    color: $background-color;
+    text-decoration: none;
+  }
+
+  .address__text {
+    color: $background-color;
+    margin-top: 20px;
+  }
+
+  .adress__link {
+    color: rgb(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons__div {
+    margin-top: 72px;
+    margin-bottom: 100px;
+  }
+
+  .icons__text {
+    font-weight: 700;
+    font-size: 14px;
+    color: $background-color;
+    margin-bottom: 20px;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .icons__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .icons__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    fill: $background-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .icons__link:hover {
+    background-color: $accent-color;
+  }
+
+  .icons__grid {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__email {
+    margin-top: 72px;
+    margin-bottom: 100px;
+  }
+
+  .email__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $background-color;
+    margin-bottom: 20px;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .email__button {
+    gap: 10px;
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    color: $background-color;
+    background-color: $accent-color;
+    font-size: 16px;
+    font-weight: 700;
+    /* background-image: url(../images/footer/twitter.png); */
+    /* background-repeat: no-repeat; */
+    margin-left: 12px;
+    /* background-size: 24px;
+  background-position: center; */
+    text-align: center;
+    transition-property: color background-color box-shadow;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .email__button:hover {
+    color: $accent-color;
+    background-color: $background-color;
+    box-shadow: 3px 5px 5px 0px rgb(0, 0, 0, 0.8);
+  }
+
+  .input {
+    outline: none;
+    width: 100%;
+    width: 47px;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 15px 295px 15px 16px;
+    color: rgb(255, 255, 255, 0.6);
+    width: 358px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    transition-property: border;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .input:hover,
+  input:focus-within {
+    border: 1px solid rgb(33, 150, 243, 0.3);
+  }
 }

@@ -1,70 +1,145 @@
-.form-icon {
+.form__icon {
   width: 18px;
   height: 18px;
   color: $primary-text-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover .form-icon,
-.form-field:hover,
-.form-field:focus-within .form-icon,
-.form-field:focus-within {
+.form__field:hover .form__icon,
+.form__field:hover,
+.form__field:focus-within .form__icon,
+.form__field:focus-within {
   cursor: pointer;
   border-color: $accent-color;
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
-.form-fields {
+.form__fields {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.form-element {
+.form__element {
   display: flex;
   row-gap: 4px;
   flex-direction: column;
 }
 
-.form-label {
+.form__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
-.form-field {
+.form__field {
   display: flex;
   align-items: center;
   border: 1px solid rgb(33, 33, 33, 0.2);
   padding: 11px 12px;
   border-radius: 4px;
   gap: 12px;
-  color: var(--background-color);
+  color: $background-color;
   background-color: $background-color;
   transition-property: border;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:hover {
+.form__field:hover {
   border: 1px solid $accent-color;
 }
 
-.comment-field {
+.comment__field {
   resize: none;
 }
 
-.form-input {
+.form__input {
   flex-grow: 2;
   font-size: 12px;
   color: $logo-color;
   resize: none;
 }
 
-.comment-field {
+.comment__field {
   padding: 12px 16px;
 }
 
-.form-comment {
+.form__comment {
   min-height: 96px;
   resize: none;
+}
+
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
+  .form__icon {
+    width: 18px;
+    height: 18px;
+    color: $primary-text-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form__field:hover .form__icon,
+  .form__field:hover,
+  .form__field:focus-within .form__icon,
+  .form__field:focus-within {
+    cursor: pointer;
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+
+  .form__fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .form__element {
+    display: flex;
+    row-gap: 4px;
+    flex-direction: column;
+  }
+
+  .form__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+  }
+
+  .form__field {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(33, 33, 33, 0.2);
+    padding: 11px 12px;
+    border-radius: 4px;
+    gap: 12px;
+    color: $background-color;
+    background-color: $background-color;
+    transition-property: border;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form__field:hover {
+    border: 1px solid $accent-color;
+  }
+
+  .comment__field {
+    resize: none;
+  }
+
+  .form__input {
+    flex-grow: 2;
+    font-size: 12px;
+    color: $logo-color;
+    resize: none;
+  }
+
+  .comment__field {
+    padding: 12px 16px;
+  }
+
+  .form__comment {
+    min-height: 96px;
+    resize: none;
+  }
 }

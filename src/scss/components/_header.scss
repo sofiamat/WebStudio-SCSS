@@ -2,113 +2,149 @@
   padding: 25px 0px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   gap: 93px;
 }
 
-.header-link {
+.header__link {
   color: $logo-color;
 }
 
-.header-link:hover {
+.header__link:hover {
   color: $accent-color;
 }
-.header-logo-part {
+.logo__part {
   color: $logo-color;
 }
-
 .logo {
+  font-size: 24px;
   font-family: "Raleway", serif;
   font-size: 26px;
   font-weight: 700;
 
   line-height: 1.2;
   color: $accent-color;
+  line-height: 1.2;
 }
 
-.nav {
-  flex-grow: 2;
-}
-
-.nav-list {
-  display: flex;
-  gap: 50px;
-}
-
-.nav-list-portfolio::after {
-  content: "";
-  width: 1600;
-  height: 1px;
-  color: $text-arrow;
-}
-
-.nav-item {
-  position: relative;
-}
-
-.nav-link {
-  color: $primary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-}
-
-.nav-link::after,
-.using::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  position: absolute;
-  left: 0;
-  bottom: -28px;
-  border-radius: 4px;
-  transform-origin: center;
-  transform: scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link:hover::after,
-.using::after {
-  transform: scale(1);
-}
-
-.nav-link:hover,
-.using {
-  color: $accent-color;
-}
-
+.nav__list,
 .list {
-  display: flex;
-  gap: 50px;
+  display: none;
 }
 
-.list-link {
-  display: flex;
-  align-items: center;
-  color: $secondary-text-color;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  gap: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 25px 0px;
+  }
 
-.list-link:hover,
-.email-link:hover,
-.phone-link:hover {
-  color: $accent-color;
-  fill: $accent-color;
-  fill: $accent-color;
-}
+  .header__container {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+  }
 
-.email-link {
-  width: 16px;
-  height: 12px;
-}
+  .header__link {
+    color: $logo-color;
+  }
 
-.phone-link {
-  width: 10px;
-  height: 16px;
+  .header__link:hover {
+    color: $accent-color;
+  }
+  .logo-part {
+    color: $logo-color;
+  }
+
+  .logo {
+    font-size: 26px;
+
+    line-height: 1.2;
+  }
+
+  .nav {
+    flex-grow: 2;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 50px;
+  }
+
+  .nav__list-portfolio::after {
+    content: "";
+    width: 1600;
+    height: 1px;
+    color: $text-arrow;
+  }
+
+  .nav__item {
+    position: relative;
+  }
+
+  .nav__link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  .nav__link::after,
+  .using::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    border-radius: 4px;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav__link:hover::after,
+  .using::after {
+    transform: scale(1);
+  }
+
+  .nav__link:hover,
+  .using {
+    color: $accent-color;
+  }
+
+  .list {
+    display: flex;
+    gap: 50px;
+  }
+
+  .list__link {
+    display: flex;
+    align-items: center;
+    color: $secondary-text-color;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .list__link:hover,
+  .email__link:hover,
+  .phone__link:hover {
+    color: $accent-color;
+    fill: $accent-color;
+    fill: $accent-color;
+  }
+
+  .email__link {
+    width: 16px;
+    height: 12px;
+  }
+
+  .phone__link {
+    width: 10px;
+    height: 16px;
+  }
 }
