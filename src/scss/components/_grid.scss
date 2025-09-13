@@ -1,7 +1,5 @@
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flexcenter;цццц
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -22,20 +20,22 @@
   margin-bottom: 30px;
 }
 
+.grid__item--col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // ..........................DESKTOP VERSION .....................
 @media screen and (min-width: 1024px) {
   .grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flexcenter;
     flex-wrap: wrap;
     gap: 30px;
   }
 
   .grid__list--gap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flexcenter;
     flex-wrap: wrap;
     gap: 10px;
   }

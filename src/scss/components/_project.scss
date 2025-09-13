@@ -1,3 +1,65 @@
+.project {
+  outline: 1px solid $secondary-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project:hover {
+  box-shadow: 2px 5px 5px 0px rgb(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+.project:hover .project-overlay {
+  transform: translateY(0);
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 18px;
+
+  line-height: 2;
+}
+
+.project__photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover .project__overlay {
+  transform: translateY(0%);
+}
+
+.project__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(33, 150, 243, 0.9);
+  padding: 77px 24px;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay__content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: $background-color;
+}
+
+.project__div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 24px;
+}
+
+.projects__text {
+  font-size: 16px;
+  color: $secondary-text-color;
+  line-height: 1.8;
+}
 // ..........................DESKTOP VERSION .....................
 @media screen and (min-width: 1024px) {
   .project {
@@ -15,23 +77,23 @@
     transform: translateY(0);
   }
 
-  .project-title {
+  .project__title {
     font-weight: 700;
     font-size: 18px;
 
     line-height: 2;
   }
 
-  .project-photo {
+  .project__photo {
     position: relative;
     overflow: hidden;
   }
 
-  .project:hover .project-overlay {
+  .project:hover .project__overlay {
     transform: translateY(0%);
   }
 
-  .project-overlay {
+  .project__overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -44,20 +106,20 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .project-overlay-content {
+  .overlay__content {
     font-size: 18px;
     line-height: 1.6;
     color: $background-color;
   }
 
-  .project-div {
+  .project__div {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 20px 24px;
   }
 
-  .projects-text {
+  .projects__text {
     font-size: 16px;
     color: $secondary-text-color;
     line-height: 1.8;

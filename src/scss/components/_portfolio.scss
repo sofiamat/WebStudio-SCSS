@@ -1,23 +1,55 @@
+.portfolio {
+  margin-bottom: 60px;
+}
+
+.portfolio__container {
+  @extend %flexcenter;
+  flex-direction: column;
+}
+
+.portfolio__list {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.portfolio__button {
+  color: $logo-color;
+  padding: 6px 22px;
+  font-size: 16px;
+  letter-spacing: inherit;
+  border-radius: 4px;
+  transition-property: background-color color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__button:hover {
+  background-color: $accent-color;
+  color: $background-color;
+  cursor: pointer;
+  box-shadow: 1px 3px 5px 0px rgb(187, 185, 185, 0.8);
+}
 // ..........................DESKTOP VERSION .....................
 @media screen and (min-width: 1024px) {
   .portfolio {
     margin-bottom: 94px;
   }
 
-  .portfolio-container {
+  .portfolio__container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .portfolio-list {
+  .portfolio__list {
     display: flex;
     gap: 8px;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    margin-top: 50px;
+    margin-bottom: 94px;
   }
 
-  .portfolio-button {
+  .portfolio__button {
     color: $logo-color;
     padding: 6px 22px;
     font-size: 16px;
@@ -27,9 +59,10 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .portfolio-button:hover {
+  .portfolio__button:hover {
     background-color: $accent-color;
     color: $background-color;
     cursor: pointer;
+    box-shadow: 1px 3px 5px 0px rgb(187, 185, 185, 0.8);
   }
 }

@@ -7,6 +7,15 @@
 
   .icons__link--fill {
     fill: #afb1b8;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    fill: #afb1b8;
+    padding: 12px;
+    transition-property: fill background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .icons__link {

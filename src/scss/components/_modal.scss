@@ -34,9 +34,7 @@
 }
 
 .btn__close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexcenter;
   position: absolute;
   right: 8px;
   top: 8px;
@@ -132,9 +130,7 @@
   }
 
   .btn__close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     position: absolute;
     right: 8px;
     top: 8px;
