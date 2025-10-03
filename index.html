@@ -20,72 +20,85 @@
     <link rel="stylesheet" href="./src/css/main.css" />
     <!-- <link rel="stylesheet" href="./src/reset.css" /> -->
     <!-- <link rel="stylesheet" href="./src/styles/style.css" /> -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <a href="#" class="logo">Web<span class="logo__part">Studio</span></a>
-
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="/index.html" class="nav__link using">Студія</a>
-            </li>
-            <li class="nav__item">
-              <a href="./src/pages/portfolio.html" class="nav__link"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="list">
-          <li class="list__item">
-            <a href="mailto:info@devstudio.com" class="list__link">
-              <svg class="email__link">
-                <use
-                  href="./src/images/social-networks/social-icons.svg#icon-tablet"
-                />
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list__item">
-            <a href="tel:+380961111111" class="list__link">
-              <svg class="phone__link">
-                <use
-                  href="./src/images/social-networks/social-icons.svg#icon-smartphone"
-                />
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-        <!-- <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/"
-              >Instagram</a
-            >
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://x.com/?lang=uk">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a
-              class="social__link"
-              href="https://www.facebook.com/?locale=uk_UA"
-              >Facebook</a
-            >
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.linkedin.com/"
-              >LinkedIn</a
-            >
-          </li>
-        </ul> -->
+        <div class="mobile-menu">
+          <input
+            class="mobile-menu__check menu-check"
+            type="checkbox"
+            id="toggle-menu"
+          />
+          <label class="mobile-menu__label menu-toggle" for="toggle-menu"
+            ><span class="menu-toggle__line"></span
+          ></label>
+          <div class="mobile-menu__wrapp">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="/index.html" class="nav__link using">Студія</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./src/pages/portfolio.html" class="nav__link"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list">
+              <li class="list__item">
+                <a href="mailto:info@devstudio.com" class="list__link">
+                  <svg class="email__link">
+                    <use
+                      href="./src/images/social-networks/social-icons.svg#icon-tablet"
+                    />
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="tel:+380961111111" class="list__link">
+                  <svg class="phone__link">
+                    <use
+                      href="./src/images/social-networks/social-icons.svg#icon-smartphone"
+                    />
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://www.instagram.com/"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://x.com/?lang=uk"
+                  >Twitter</a
+                >
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.facebook.com/?locale=uk_UA"
+                  >Facebook</a
+                >
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.linkedin.com/"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -195,7 +208,6 @@
       <!-- /*..................................ADVANTAGES................................ */ -->
       <section class="section section--advantages">
         <div class="section__container container">
-          <!-- <h2 hidden class="section__advantages-title-about">Про нас</h2> -->
           <ul class="grid">
             <li class="grid__item grid__item--content photo__antenna">
               <h3 class="advantages__title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -235,7 +247,11 @@
             <li class="grid__item--col-3" data-aos="fade-right">
               <img
                 class="work__img"
-                src="./src/images/work/html-1.webp"
+                src="./src/images/work/html-1.jpg"
+                srcset="
+                  ./src/images/work/html-1.webp    1x,
+                  ./src/images/work/html-1@2x.webp
+                "
                 width="370"
                 height="294"
                 alt="Написання Коду"
@@ -245,7 +261,11 @@
             <li class="grid__item--col-3" data-aos="fade-down">
               <img
                 class="work__img"
-                src="./src/images/work/phone-2.webp"
+                src="./src/images/work/phone-2.jpg"
+                srcset="
+                  ./src/images/work/phone-2.webp    1x,
+                  ./src/images/work/phone-2@2x.webp
+                "
                 width="370"
                 height="294"
                 alt="Створення Адаптивів"
@@ -255,7 +275,11 @@
             <li class="grid__item-col-3" data-aos="fade-left">
               <img
                 class="work__img"
-                src="./src/images/work/art-3.webp"
+                src="./src/images/work/art-3.jpg"
+                srcset="
+                  ./src/images/work/art-3.webp    1x,
+                  ./src/images/work/art-3@2x.webp 2x
+                "
                 width="370"
                 height="294"
                 alt="Створення Дизайну"
@@ -271,23 +295,69 @@
           <h2 class="section__title">Наша команда</h2>
           <!-- /*..................................TEAMMATE................................ */ -->
           <ul class="grid">
-            <li class="grid__item">
+            <li class="grid__item--col-3">
               <article class="teammate" data-aos="zoom-in">
                 <div class="teammate__photo">
-                  <img
-                    class="teammate__img"
-                    src="./src/images/team/igor-1.webp"
-                    width="270"
-                    height="260"
-                    alt="Дизайнер"
-                  />
+                  <picture>
+                    <!-- /*..................IGOR MOBILE VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/igor-mobile.webp    1x,
+                        ./src/images/team/igor-mobile@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/igor-mobile.jpg    1x,
+                        ./src/images/team/igor-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg" />
+                    <!-- /*..................IGOR TABLET VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/igor-tablet.webp    1x,
+                        ./src/images/team/igor-tablet@2x.webp 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/igor-tablet.jpg    1x,
+                        ./src/images/team/igor-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/jpeg" />
+                    <!-- /*..................IGOR DESKTOP VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/igor-desktop.webp    1x,
+                        ./src/images/team/igor-desktop@2x.webp 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/igor-.jpg       1x,
+                        ./src/images/team/igor-tablet@2x. 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <img
+                      class="teammate__img"
+                      src="./src/images/team/igor-desktop.jpg"
+                      width="270"
+                      height="260"
+                      alt="Дизайнер"
+                  /></picture>
                 </div>
                 <div class="teammate__div">
                   <h3 class="teammate__name">Ігор Дем'яненко</h3>
 
                   <p class="teammate__role">Product Designer</p>
                   <ul class="grid__list--gap">
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.instagram.com/"
@@ -299,7 +369,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://x.com/"
@@ -311,7 +381,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.facebook.com/?locale=uk_UA"
@@ -323,7 +393,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://fr.linkedin.com/?mcid=7189711573932810240&src=go-pa&trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9209328&cid=&gad_source=1&gad_campaignid=21228777300&gbraid=0AAAAAojDCNSCX4-HrUUmbNlXup5WHe_ZE&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH4pIPxjpNIARKM4vn3PlyvsZMRK92J6s6tAU0gFzzDW2B7FklzxI_caArVZEALw_wcB&gclsrc=aw.ds"
@@ -339,24 +409,70 @@
                 </div>
               </article>
             </li>
-            <!-- /*..................................TEAMMATE................................ */ -->
-            <li class="grid__item">
+
+            <li class="grid__item grid__item--col-2">
               <article class="teammate" data-aos="zoom-in">
                 <div class="teammate__photo">
-                  <img
-                    class="teammate__img"
-                    src="./src/images/team/Olga-2.webp"
-                    width="270"
-                    height="260"
-                    alt="Дизайнер"
-                  />
+                  <picture>
+                    <!-- /*..................OLGA MOBILE VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/olga-mobile.webp    1x,
+                        ./src/images/team/olga-mobile@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/olga-mobile.jpg    1x,
+                        ./src/images/team/olga-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg" />
+                    <!-- /*..................OLGA TABLET VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/olga-tablet.webp    1x,
+                        ./src/images/team/olga-tablet@2x.webp 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/olga-tablet.jpg    1x,
+                        ./src/images/team/olga-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/jpeg" />
+                    <!-- /*..................OLGA DESKTOP VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/olga-desktop.webp    1x,
+                        ./src/images/team/olga-desktop@2x.webp 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/olga-desktop.jpg 1x,
+                        ./src/images/team/olga-desktop@2x. 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <img
+                      class="teammate__img"
+                      src="./src/images/team/Olga-desktop.jpg"
+                      width="270"
+                      height="260"
+                      alt="Дизайнер"
+                  /></picture>
                 </div>
                 <div class="teammate__div">
                   <h3 class="teammate__name">Ольга Рєпіна</h3>
 
                   <p class="teammate__role">Frontend Developer</p>
                   <ul class="grid__list--gap">
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.instagram.com/"
@@ -368,7 +484,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://x.com/"
@@ -380,7 +496,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.facebook.com/?locale=uk_UA"
@@ -392,7 +508,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://fr.linkedin.com/?mcid=7189711573932810240&src=go-pa&trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9209328&cid=&gad_source=1&gad_campaignid=21228777300&gbraid=0AAAAAojDCNSCX4-HrUUmbNlXup5WHe_ZE&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH4pIPxjpNIARKM4vn3PlyvsZMRK92J6s6tAU0gFzzDW2B7FklzxI_caArVZEALw_wcB&gclsrc=aw.ds"
@@ -408,24 +524,70 @@
                 </div>
               </article>
             </li>
-            <!-- /*..................................TEAMMATE................................ */ -->
-            <li class="grid__item">
+
+            <li class="grid__item grid__item--col-2">
               <article class="teammate" data-aos="zoom-in">
                 <div class="teammate__photo">
-                  <img
-                    class="teammate__img"
-                    src="./src/images/team/Mikola-3.webp"
-                    width="270"
-                    height="260"
-                    alt="Дизайнер"
-                  />
+                  <picture>
+                    <!-- /*..................MIKOLA MOBILE VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-mobile.webp    1x,
+                        ./src/images/team/mikola-mobile@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-mobile.jpg    1x,
+                        ./src/images/team/mikola-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg" />
+                    <!-- /*..................MIKOLA TABLET VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-tablet.webp    1x,
+                        ./src/images/team/mikola-tablet@2x.webp 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-tablet.jpg    1x,
+                        ./src/images/team/mikola-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/jpeg" />
+                    <!-- /*..................MIKOLA DESKTOP VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-desktop.webp    1x,
+                        ./src/images/team/mikola-desktop@2x.webp 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mikola-desktop.jpg 1x,
+                        ./src/images/team/mikola-desktop@2x. 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <img
+                      class="teammate__img"
+                      src="./src/images/team/mikola-desktop.jpg"
+                      width="270"
+                      height="260"
+                      alt="Дизайнер"
+                  /></picture>
                 </div>
                 <div class="teammate__div">
                   <h3 class="teammate__name">Микола Тарасов</h3>
 
                   <p class="teammate__role">Marketing</p>
                   <ul class="grid__list--gap">
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.instagram.com/"
@@ -437,7 +599,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://x.com/"
@@ -449,7 +611,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.facebook.com/?locale=uk_UA"
@@ -461,7 +623,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://fr.linkedin.com/?mcid=7189711573932810240&src=go-pa&trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9209328&cid=&gad_source=1&gad_campaignid=21228777300&gbraid=0AAAAAojDCNSCX4-HrUUmbNlXup5WHe_ZE&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH4pIPxjpNIARKM4vn3PlyvsZMRK92J6s6tAU0gFzzDW2B7FklzxI_caArVZEALw_wcB&gclsrc=aw.ds"
@@ -477,24 +639,70 @@
                 </div>
               </article>
             </li>
-            <!-- /*..................................TEAMMATE................................ */ -->
-            <li class="grid__item">
+
+            <li class="grid__item grid__item--col-2">
               <article class="teammate" data-aos="zoom-in">
                 <div class="teammate__photo">
-                  <img
-                    class="teammate__img"
-                    src="./src/images/team/Mihailo-4.webp"
-                    width="270"
-                    height="260"
-                    alt="Дизайнер"
-                  />
+                  <picture>
+                    <!-- /*..................MIHAILO MOBILE VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-mobile.webp    1x,
+                        ./src/images/team/mihailo-mobile@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-mobile.jpg    1x,
+                        ./src/images/team/mihailo-mobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg" />
+                    <!-- /*..................MIHAILO TABLET VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-tablet.webp    1x,
+                        ./src/images/team/mihailo-tablet@2x.webp 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-tablet.jpg    1x,
+                        ./src/images/team/mihailo-tablet@2x.jpg 2x
+                      "
+                      media="(max-width:1023px)"
+                      type="image/jpeg" />
+                    <!-- /*..................MIHAILO DESKTOP VERSION................... */ -->
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-desktop.webp    1x,
+                        ./src/images/team/mihailo-desktop@2x.webp 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./src/images/team/mihailo-desktop.jpg 1x,
+                        ./src/images/team/mihailo-desktop@2x. 2x
+                      "
+                      media="(min-width:1024px)"
+                      type="image/webp" />
+                    <img
+                      class="teammate__img"
+                      src=" ./src/images/team/mihailo-desktop.jpg"
+                      width="270"
+                      height="260"
+                      alt="Дизайнер"
+                  /></picture>
                 </div>
                 <div class="teammate__div">
                   <h3 class="teammate__name">Михайло Єрмаков</h3>
 
                   <p class="teammate__role">UI Designer</p>
                   <ul class="grid__list--gap">
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.instagram.com/"
@@ -506,7 +714,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://x.com/"
@@ -518,7 +726,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://www.facebook.com/?locale=uk_UA"
@@ -530,7 +738,7 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="grid__item">
+                    <li class="grid__item grid__item--col-2">
                       <a
                         class="icons__link icons__link--fill"
                         href="https://fr.linkedin.com/?mcid=7189711573932810240&src=go-pa&trk=sem-ga_campid.21228777300_asid.161774284317_crid.698137525090_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9209328&cid=&gad_source=1&gad_campaignid=21228777300&gbraid=0AAAAAojDCNSCX4-HrUUmbNlXup5WHe_ZE&gclid=Cj0KCQjwxo_CBhDbARIsADWpDH4pIPxjpNIARKM4vn3PlyvsZMRK92J6s6tAU0gFzzDW2B7FklzxI_caArVZEALw_wcB&gclsrc=aw.ds"
@@ -708,11 +916,11 @@
                 />
                 <button class="email__button" type="submit">
                   Підписатися
-                  <!-- <svg>
+                  <svg>
                     <use
                       href="./src/images/social-networks/symbol-twitter.svg"
                     />
-                  </svg> -->
+                  </svg>
                 </button>
               </div>
             </div>

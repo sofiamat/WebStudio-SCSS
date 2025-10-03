@@ -5,8 +5,7 @@
 }
 
 .section__title {
-  font-weight: 700;
-  font-size: 28px;
+  @include font-text(36px);
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 50px;
@@ -16,7 +15,7 @@
   display: block;
   background-color: $background-color;
   border-radius: 4px;
-  box-shadow: 1px 3px 1px 0px rgb(0, 0, 0, 0.13),
+  box-shadow: 1px 4px 1px 0px rgb(0, 0, 0, 0.13),
     -1px 3px 1px 0px rgb(0, 0, 0, 0.13);
 }
 
@@ -77,74 +76,35 @@
   height: 20px;
 }
 
-// ..........................DESKTOP VERSION .....................
-@media screen and (min-width: 1024px) {
+// ..........................TABLET VERSION .....................
+@media screen and (max-width: 1023px) {
   .section--team {
     padding-top: 94px;
     padding-bottom: 87px;
-    background-color: $secondary-color;
   }
 
-  .section__title {
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-bottom: 50px;
+  .teammate__img {
+    width: 354px;
+    height: 374px;
   }
 
-  .teammate {
-    background-color: $background-color;
-    border-radius: 4px;
-    box-shadow: 1px 3px 1px 0px rgb(0, 0, 0, 0.13),
-      -1px 3px 1px 0px rgb(0, 0, 0, 0.13);
+  .teammate__div {
+    padding: 30px 0px;
   }
 
+  .grid__item--col-2 {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+// ..........................DESKTOP VERSION .....................
+@media screen and (min-width: 1024px) {
   .teammate__img {
     width: 270px;
     height: 260px;
   }
 
-  .teammate__name {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-  }
-
-  .teammate__role {
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    color: $secondary-text-color;
-  }
-
   .teammate__div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
     padding: 30px 0px;
-  }
-
-  .icons__link--fill {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 30px;
-    fill: #afb1b8;
-    padding: 12px;
-    transition-property: fill background-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icons__link:hover {
-    fill: $background-color;
-    background-color: $accent-color;
-  }
-
-  .icons__grid {
-    width: 20px;
-    height: 20px;
   }
 
   .grid__item {

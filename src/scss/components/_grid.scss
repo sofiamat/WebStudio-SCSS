@@ -1,5 +1,5 @@
 .grid {
-  @extend %flexcenter;цццц
+  @extend %flex-center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -26,17 +26,22 @@
   align-items: center;
 }
 
+// ..........................TABLET VERSION .....................
+@media screen and (max-width: 1023px) {
+  .grid__item--col-2 {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .grid__item--col-6 {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .grid__item--content::before {
+    width: 354px;
+  }
+}
+
 // ..........................DESKTOP VERSION .....................
 @media screen and (min-width: 1024px) {
-  .grid {
-    @extend %flexcenter;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
   .grid__list--gap {
-    @extend %flexcenter;
-    flex-wrap: wrap;
     gap: 10px;
   }
 
@@ -44,29 +49,12 @@
     flex-basis: calc((100% - 90px) / 4);
   }
 
-  .grid__item--col-3 {
-    flex-basis: calc((100% - 60px) / 3);
-  }
-
   .grid__item--col-6 {
     flex-basis: calc((100% - 150px) / 6);
-  }
 
-  .grid__item--col-3 {
-    display: flex;
-    position: relative;
-    align-items: end;
-  }
-
-  .grid__item--content::before {
-    content: "";
-    display: block;
-    background-clip: content-box;
-
-    height: 120px;
-    background-color: $secondary-color;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
+    flex-direction: row;
+    .grid__item--content::before {
+      width: 270px;
+    }
   }
 }

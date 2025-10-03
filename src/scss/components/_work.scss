@@ -15,8 +15,7 @@
   .work__title {
     text-align: center;
     position: absolute;
-    font-weight: 700;
-    font-size: 14px;
+    @include font-text;
     color: $background-color;
     background-color: rgb(47, 48, 58, 0.8);
     padding: 27px 0 27px;

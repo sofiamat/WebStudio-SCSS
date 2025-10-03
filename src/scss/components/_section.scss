@@ -1,6 +1,6 @@
 .section {
   padding: 60px 0px;
-  @extend %flexcenter;
+  @extend %flex-center;
 }
 
 .section--advatages {
@@ -12,45 +12,28 @@
 }
 
 .section__title {
-  font-weight: 700;
-  font-size: 28px;
+  @include font-text(28px);
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .section--team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: $secondary-color;
 }
 
 // ..........................DESKTOP VERSION .....................
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0px;
-    @extend %flexcenter;
   }
 
   .section--advatages {
     padding: 94px 0px 0px;
   }
 
-  .section--work {
-    padding: 95px 0px;
-  }
-
   .section__title {
-    font-weight: 700;
     font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-
-  .section--team {
-    padding-top: 94px;
-    padding-bottom: 87px;
-    background-color: $secondary-color;
+    margin-bottom: 50px;
   }
 }

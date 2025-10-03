@@ -19,11 +19,9 @@
 }
 
 .advantages__title {
-  font-weight: 700;
-  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @extend %flexcenter;
+  @extend %flex-center;
 }
 
 .advantages__text {
@@ -39,72 +37,11 @@
   .section--advatages {
     padding: 94px 0px 0px;
   }
-
-  .photo__antenna::before {
-    background-image: url(../images/main/antenna.png);
-  }
-
-  .photo__heur::before {
-    background-image: url(../images/main/heur.png);
-  }
-
-  .photo__graphic::before {
-    background-image: url(../images/main/graphic.png);
-  }
-
-  .photo__astonaft::before {
-    background-image: url(../images/main/astronaft.png);
-  }
-
-  .advantages__title {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .advantages__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71429;
-    letter-spacing: 0.03em;
-    color: $secondary-text-color;
-  }
 }
+
 // ..........................DESKTOP VERSION .....................
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .section--advatages {
     padding: 94px 0px 0px;
-  }
-
-  .photo__antenna::before {
-    background-image: url(../images/main/antenna.png);
-  }
-
-  .photo__heur::before {
-    background-image: url(../images/main/heur.png);
-  }
-
-  .photo__graphic::before {
-    background-image: url(../images/main/graphic.png);
-  }
-
-  .photo__astonaft::before {
-    background-image: url(../images/main/astronaft.png);
-  }
-
-  .advantages__title {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .advantages__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71429;
-    letter-spacing: 0.03em;
-    color: $secondary-text-color;
   }
 }
