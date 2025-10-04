@@ -14,6 +14,10 @@
   margin-bottom: 60px;
 }
 
+.portfolio__item {
+  @extend %shadow-set;
+}
+
 .portfolio__button {
   color: $logo-color;
   padding: 6px 22px;

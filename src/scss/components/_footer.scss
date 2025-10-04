@@ -147,7 +147,7 @@
 .email__button:hover {
   color: $accent-color;
   background-color: $background-color;
-  box-shadow: 3px 5px 5px 0px rgb(0, 0, 0, 0.8);
+  @extend %shadow-set;
 }
 
 .input {
